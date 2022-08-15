@@ -1,0 +1,33 @@
+@import "Ui/Ui.scss";
+
+.autocomplete__inputIconWrap {
+  position: absolute;
+  top: 0px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  /*background: black;*/
+}
+
+.autocomplete__inputIconWrapLeft {
+  left: 15px;
+
+  > .autocomplete__inputIcon {
+    padding-right: 7px;
+    border-right: 1px color(lightGray) solid;
+  }
+}
+
+.autocomplete__inputIconWrapRight {
+  right: 5px;
+
+  > .autocomplete__inputIcon {
+    padding-left: 8px;
+  }
+}
+
+.autocomplete__inputIcon * {
+  color: color(lightGray);
+  width: 18px;
+  height: 18px;
+}

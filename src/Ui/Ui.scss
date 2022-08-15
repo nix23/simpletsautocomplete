@@ -1,0 +1,12 @@
+/* Helper fns and colors which are used in all stylesheets */
+@function color($name) {
+  @return map-get($color, inspect($name));
+}
+
+$color: (
+  'dark': rgb(52,73,94),
+  'light': #339a99,
+  'lightGray': rgb(150,150,150),
+  'gray': #b6c1ce,
+  'selection': #ebf4ff
+);

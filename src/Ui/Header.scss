@@ -1,0 +1,12 @@
+@import 'Ui/Ui.scss';
+
+.page__header {
+  color: color(dark);
+  text-align: center;
+}
+
+.page__headerHr {
+  max-width: 350px;
+  margin: 0 auto;
+  padding-bottom: 20px;
+}

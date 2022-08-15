@@ -1,0 +1,31 @@
+@import "Ui/Ui.scss";
+
+.textSeparator {
+  display: flex;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  max-width: 350px;
+  margin: 0 auto;
+}
+
+.textSeparator__lineWrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+
+  .line {
+    width: 100%;
+    height: 1px;
+    background: #ccc;
+  }
+}
+
+.textSeparator__text {
+  width: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+
+  color: color(dark);
+  font-size: 14px;
+}

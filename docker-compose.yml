@@ -1,0 +1,13 @@
+version: '3'
+services:
+  autocompleteweb:
+    build:
+      context: .
+      dockerfile: conf/Dockerfile
+    container_name: autocompleteweb
+    ports:
+      - "3300:80"
+      #- "80:80"
+    volumes:
+      - ./conf/000-default.conf:/etc/apache2/sites-enabled/000-default.conf
+      - '.:/var/www/autocomplete'
