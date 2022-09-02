@@ -13,7 +13,7 @@
 
   <p align="center">
     Small autocomplete plugin created using React/TypeScript. 
-    View demo: <a href="http://45.55.240.120">Open</a>. Demo page contains 2 autocomplete instances: first one is populated with country(Name/Code) data from local data.json file and second one is loading USA city data remotely from one of my prev projects.
+    View demo: <a href="https://codesandbox.io/p/github/nix23/simpletsautocomplete/csb-7d3gd0/draft/sad-varahamihira">Open</a>. Demo page contains 2 autocomplete instances: first one is populated with country(Name/Code) data from local data.json file and second one is loading USA city data remotely from one of my prev projects.
   </p>
 </div>
 
