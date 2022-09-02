@@ -173,13 +173,13 @@ const Autocomplete: FC<IAutocompleteProps> = ({
         </AutocompleteIcon>
       </section>
       {suggestions.length > 0 && show && (
-        <section 
+        <ul 
           className='autocomplete__suggestions' 
-          ref={suggestionsEl}
+          ref={suggestionsEl as React.RefObject<HTMLUListElement>}
           data-testid='suggestions'
         >
           {suggestions.map((item: ISuggestion) => (
-            <div 
+            <li 
               key={item.id} 
               className='autocomplete__suggestionsItem'
               onClick={() => selectSuggestion(item)}
@@ -189,9 +189,9 @@ const Autocomplete: FC<IAutocompleteProps> = ({
                 text={item.value}
                 selectionText={value}
               />
-            </div>
+            </li>
           ))}
-        </section>
+        </ul>
       )}
     </section>
   );
